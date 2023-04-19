@@ -37,6 +37,6 @@ jobs:
       - name: Deploy to GitHubPages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          GITHUB_TOJEN: ${{secres.GITHUB_TOKEN}}
+          GITHUB_TOJEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: deploy_dist
